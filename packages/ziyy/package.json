@@ -1,8 +1,24 @@
 {
   "name": "ziyy",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "type": "module",
   "description": "Terminal Styling using HTML-like syntax.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziyy-dev/ziyy-js",
+    "directory": "packages/ziyy"
+  },
+  "homepage": "https://ziyy-dev.github.io",
+  "bugs": {
+    "url": "https://github.com/ziyy-dev/ziyy-js/issues"
+  },
+  "keywords": [
+    "terminal",
+    "color",
+    "style",
+    "html",
+    "cli"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

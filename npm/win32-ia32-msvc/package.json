@@ -1,8 +1,10 @@
 {
   "name": "@ziyy/core-win32-ia32-msvc",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "repository": {
-    "url": "https://github.com/ziyy-dev/ziyy-js"
+    "type": "git",
+    "url": "git+https://github.com/ziyy-dev/ziyy-js",
+    "directory": "npm/win32-ia32-msvc"
   },
   "os": [
     "win32"
@@ -14,8 +16,14 @@
   "files": [
     "core.win32-ia32-msvc.node"
   ],
-  "license": "MIT",
+  "license": "(MIT OR Apache-2.0)",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "description": "Terminal Styling using HTML-like syntax.",
+  "author": "alMukaafih",
+  "bugs": {
+    "url": "https://github.com/ziyy-dev/ziyy-js/issues"
+  },
+  "homepage": "https://ziyy-dev.github.io"
 }

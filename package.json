@@ -1,8 +1,9 @@
 {
   "name": "@ziyy/core",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "index.js",
   "types": "index.d.ts",
+  "description": "Terminal Styling using HTML-like syntax.",
   "napi": {
     "name": "core",
     "triples": {
@@ -23,9 +24,22 @@
     }
   },
   "repository": {
-    "url": "https://github.com/ziyy-dev/ziyy-js"
+    "type": "git",
+    "url": "git+https://github.com/ziyy-dev/ziyy-js"
   },
-  "license": "MIT",
+  "homepage": "https://ziyy-dev.github.io",
+  "bugs": {
+    "url": "https://github.com/ziyy-dev/ziyy-js/issues"
+  },
+  "keywords": [
+    "terminal",
+    "color",
+    "style",
+    "html",
+    "cli"
+  ],
+  "author": "alMukaafih",
+  "license": "(MIT OR Apache-2.0)",
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",
     "@napi-rs/cli": "^2.18.4",
@@ -35,14 +49,16 @@
     "node": ">= 10"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "npm/*"
   ],
   "scripts": {
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:check": "napi build --platform --release --pipe \"biome check --write --unsafe\"",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
+    "check": "biome check --write",
+    "mgr": "node scripts/mgr.js",
     "test": "vitest run",
     "universal": "napi universal",
     "version": "napi version"

@@ -975,6 +975,96 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ziyy/core-android-arm-eabi@workspace:npm/android-arm-eabi":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-android-arm-eabi@workspace:npm/android-arm-eabi"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-android-arm64@workspace:npm/android-arm64":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-android-arm64@workspace:npm/android-arm64"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-darwin-arm64@workspace:npm/darwin-arm64":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-darwin-arm64@workspace:npm/darwin-arm64"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-darwin-universal@workspace:npm/darwin-universal":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-darwin-universal@workspace:npm/darwin-universal"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-darwin-x64@workspace:npm/darwin-x64":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-darwin-x64@workspace:npm/darwin-x64"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-arm-gnueabihf@workspace:npm/linux-arm-gnueabihf":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-arm-gnueabihf@workspace:npm/linux-arm-gnueabihf"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-arm-musleabihf@workspace:npm/linux-arm-musleabihf":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-arm-musleabihf@workspace:npm/linux-arm-musleabihf"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-arm64-gnu@workspace:npm/linux-arm64-gnu":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-arm64-gnu@workspace:npm/linux-arm64-gnu"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-arm64-musl@workspace:npm/linux-arm64-musl":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-arm64-musl@workspace:npm/linux-arm64-musl"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-riscv64-gnu@workspace:npm/linux-riscv64-gnu":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-riscv64-gnu@workspace:npm/linux-riscv64-gnu"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-x64-gnu@workspace:npm/linux-x64-gnu":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-x64-gnu@workspace:npm/linux-x64-gnu"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-linux-x64-musl@workspace:npm/linux-x64-musl":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-linux-x64-musl@workspace:npm/linux-x64-musl"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-win32-arm64-msvc@workspace:npm/win32-arm64-msvc":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-win32-arm64-msvc@workspace:npm/win32-arm64-msvc"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-win32-ia32-msvc@workspace:npm/win32-ia32-msvc":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-win32-ia32-msvc@workspace:npm/win32-ia32-msvc"
+  languageName: unknown
+  linkType: soft
+
+"@ziyy/core-win32-x64-msvc@workspace:npm/win32-x64-msvc":
+  version: 0.0.0-use.local
+  resolution: "@ziyy/core-win32-x64-msvc@workspace:npm/win32-x64-msvc"
+  languageName: unknown
+  linkType: soft
+
 "@ziyy/core@workspace:., @ziyy/core@workspace:^":
   version: 0.0.0-use.local
   resolution: "@ziyy/core@workspace:."
