@@ -1,0 +1,34 @@
+{
+  "name": "ziyy",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Terminal Styling using HTML-like syntax.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "@ziyy/core": "workspace:^"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
+    "@rslib/core": "^0.10.4",
+    "@types/node": "^22.15.33",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

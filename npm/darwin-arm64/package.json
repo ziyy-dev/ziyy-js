@@ -1,6 +1,9 @@
 {
   "name": "@ziyy/core-darwin-arm64",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/ziyy-dev/ziyy-js"
+  },
   "os": [
     "darwin"
   ],

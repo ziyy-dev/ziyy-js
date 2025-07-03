@@ -15,7 +15,6 @@
         "armv7-unknown-linux-gnueabihf",
         "armv7-unknown-linux-musleabihf",
         "x86_64-unknown-linux-musl",
-        "x86_64-unknown-freebsd",
         "i686-pc-windows-msvc",
         "armv7-linux-androideabi",
         "universal-apple-darwin",
@@ -23,24 +22,28 @@
       ]
     }
   },
+  "repository": {
+    "url": "https://github.com/ziyy-dev/ziyy-js"
+  },
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",
     "@napi-rs/cli": "^2.18.4",
-    "ava": "^6.0.1"
-  },
-  "ava": {
-    "timeout": "3m"
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">= 10"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "artifacts": "napi artifacts",
-    "build": "napi build --platform --release --pipe \"biome check --write --unsafe\"",
+    "build": "napi build --platform --release",
+    "build:check": "napi build --platform --release --pipe \"biome check --write --unsafe\"",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
+    "test": "vitest run",
     "universal": "napi universal",
     "version": "napi version"
   },
