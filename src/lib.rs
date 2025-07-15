@@ -10,7 +10,10 @@ pub fn style(source: String) -> napi::Result<String> {
     // let source = indexer.index(source.as_ref().to_string());
     let mut splitter = Splitter::new();
     #[allow(clippy::unnecessary_to_owned)]
-    let frags = splitter.split(source);
+    let frags = match splitter.split(source) {
+        Ok(v) => v,
+        Err(e) => return Err(napi::Error::from_reason(e.to_string())),
+    };
 
     let parser = Parser::new(false);
     let chunks = match parser.parse(frags) {
