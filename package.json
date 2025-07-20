@@ -1,6 +1,6 @@
 {
   "name": "@ziyy/core",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "index.js",
   "types": "index.d.ts",
   "description": "Terminal Styling using HTML-like syntax.",
@@ -36,7 +36,8 @@
     "color",
     "style",
     "html",
-    "cli"
+    "cli",
+    "ansi"
   ],
   "author": "alMukaafih",
   "license": "(MIT OR Apache-2.0)",
