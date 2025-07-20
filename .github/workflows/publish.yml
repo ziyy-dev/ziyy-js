@@ -10,13 +10,13 @@ permissions:
     inputs:
       run_id:
         description: "Run ID to download artifacts from"
-        required: true
+        required: false
       ziyy:
         description: "Publish ziyy package"
         type: boolean
         required: true
       ziyy-core:
-        description: "Publish ziyy-core package"
+        description: "Publish @ziyy/core package"
         type: boolean
         required: true
 jobs:
@@ -33,15 +33,21 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Download all artifacts
+        if: ${{ inputs.ziyy-core }}
         uses: actions/download-artifact@v4
         with:
           path: artifacts
           run-id: ${{ inputs.run_id }}
           github-token: ${{ secrets.GH_PAT }}
           repository: ziyy-dev/ziyy-js
+      - name: Verify artifacts
+        if: ${{ inputs.ziyy-core }}
+        run: yarn mgr verify-artifacts
       - name: Move artifacts
+        if: ${{ inputs.ziyy-core }}
         run: yarn artifacts
       - name: List packages
+        if: ${{ inputs.ziyy-core }}
         run: ls -R ./npm
         shell: bash
       - name: Set up NPM

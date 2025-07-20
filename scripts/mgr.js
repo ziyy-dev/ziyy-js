@@ -26,6 +26,9 @@ class Main {
       case "publish":
         this.publish();
         break;
+      case "verify-artifacts":
+        this.verifyArtifacts();
+        break;
 
       default:
         console.error(`Unknown Command: ${this.args[0]}`);
@@ -112,6 +115,13 @@ class Main {
     });
     // @ts-ignore
     this.optionalDependencies[packageJson.name] = packageJson.version;
+  }
+
+  verifyArtifacts() {
+    const __artifacts = fs.readdirSync(join(this.__root, "artifacts"));
+    if (__artifacts.length <= 0) {
+      exit(1);
+    }
   }
 }
 
